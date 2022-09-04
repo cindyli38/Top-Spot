@@ -7,7 +7,7 @@ import Dashboard from './Components/Dashboard';
 function App() {
 
   const CLIENT_ID = "cd72f1d5c3274e96b4881e12b4c4f01d"
-  const REDIRECT_URI = "http://localhost:3000/dashboard"
+  const REDIRECT_URI = "https://topspot-rouge.vercel.app/dashboard"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
 
