@@ -1,0 +1,213 @@
+* {
+  transition: all;
+  transition-duration: 250ms;
+}
+
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #2C4050;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.outerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+  font-size: 3vw;
+  color: white;
+}
+
+button {
+  background-color: #658F7F;
+  color: white;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: all;
+  transition-duration: 250ms;
+
+  /* box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, .25); */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+}
+
+button:hover {
+  color: rgb(44, 64, 80);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .3),
+    inset -2px -2px 5px rgba(83, 119, 149, 0.6), inset 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  border-radius: 9999px;
+  font-size: 2vw;
+  background-color: #658F7F;
+  color: black;
+  /* max-width: 40vw; */
+}
+
+input {
+  border: none;
+  border-radius: 9999px;
+  font-size: 2vw;
+  background-color: #658F7F;
+  color: black;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+  /* outline-color: #658F7F !important; */
+}
+
+input::placeholder {
+  color: rgb(99, 98, 98);
+}
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1vw; */
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Artist {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  font-weight: bold;
+  color: white;
+}
+
+.images {
+  max-width: 20vw;
+  max-height: 40vw;
+  border-radius: 10px;
+}
+
+.Track {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--shadow-color);
+  opacity: 50%; */
+
+}
+
+.innerModal {
+  display: flex;
+  flex-direction: column;
+  height: 10vw;
+  width: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  opacity: 95%;
+  border-radius: 10px;
+
+}
+
+.steps {
+  height: 75%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* height: 10%; */
+}
+
+.topBar h2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exitButton {
+  /* background-color: var(--secondary-color-lighter);
+  color: var(--primary-color); */
+  border-radius: inherit;
+  border-style: none;
+  font-size: x-large;
+  cursor: pointer;
+  height: 50%;
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+}
